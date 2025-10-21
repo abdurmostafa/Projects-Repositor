@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+  build:
+    commands:
+      - echo "Entering app directory..."
+      - cd projects/cloud-engineer-projects/project-3/globalmart-catalog
+      - echo "Installing dependencies..."
+      - npm install
+      - echo "Build complete!"
+artifacts:
+  files:
+    - '**/*'
+
