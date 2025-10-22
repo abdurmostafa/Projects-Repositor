@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /projects/cloud-engineer-projects/project-3/globalmart-catalog/build
     destination: /usr/share/nginx/html/
 hooks:
   BeforeInstall:
@@ -12,3 +12,4 @@ hooks:
     - location: scripts/after_install.sh
       timeout: 300
       runas: root
+
